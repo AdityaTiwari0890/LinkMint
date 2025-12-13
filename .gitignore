@@ -55,12 +55,11 @@ logs/
 # Streamlit
 .streamlit/
 
-# Model files (if large)
-# models/*.pkl  # Uncomment if models are too large for git
-
-# Large data files (too big for GitHub)
-*.csv
+# Data files (generated)
 cleaned_urls.csv
 url_features.csv
 malicious_phish.csv
 urldata.csv
+
+# Model files (if large - uncomment if needed)
+# models/*.pkl
