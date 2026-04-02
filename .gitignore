@@ -61,5 +61,8 @@ url_features.csv
 malicious_phish.csv
 urldata.csv
 
+# Helper scripts
+push_to_github.bat
+
 # Model files (if large - uncomment if needed)
-# models/*.pkl
+models/*.pkl

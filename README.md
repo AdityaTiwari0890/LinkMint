@@ -176,12 +176,18 @@ Visit `http://localhost:8501` to access the web interface.
      ```
    - **⚠️ Security Note**: Never commit the `.env` file to version control!
 
-5. **Download ML Models**
+5. **Train ML Models**
    ```bash
-   # Models are included in the repository
-   # If missing, run training scripts in notebooks/
+   # Models are NOT included in the repository due to GitHub's 100MB file size limit
+   # Train them locally using the provided Jupyter notebooks:
    python -m jupyter notebook
-   # Run 3_supervised_models.ipynb and 4_unsupervised_models.ipynb
+   
+   # Run notebooks in this order:
+   # 1. src/1_data_cleaning.ipynb - Clean and prepare the dataset
+   # 2. src/2_feature_engineering.ipynb - Extract URL features
+   # 3. src/3_supervised_models.ipynb - Train supervised ML models
+   # 4. src/4_unsupervised_models.ipynb - Train anomaly detection model
+   # 5. src/5_ensemble_decision.ipynb - Test the complete system
    ```
 
 6. **Run the Application**

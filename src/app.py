@@ -408,7 +408,7 @@ def predict_url_detailed(url):
 tab1, tab2, tab3 = st.tabs(["🔍 URL Analysis", "📈 Model Insights", "ℹ️ About"])
 
 with tab1:
-    st.markdown('<h1 class="main-header">🔒 Malicious URL Detection System</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🔒 URLRisk Analyzer</h1>', unsafe_allow_html=True)
     st.markdown(
         "Enter a URL below to analyze its security status using advanced machine learning and threat intelligence."
     )
